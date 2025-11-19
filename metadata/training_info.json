@@ -1,0 +1,15 @@
+{
+  "dataset": "supermarket_sales.csv",
+  "n_observations": 89,
+  "date_min": "2019-01-01",
+  "date_max": "2019-03-30",
+  "best_model": {
+    "Model": "SARIMAX",
+    "MAE": 299.2288113563188,
+    "RMSE": 336.86810637606266,
+    "MAPE (%)": 11.063163470184113,
+    "sMAPE (%)": 11.80210227633137,
+    "MASE": 0.22775440997160673
+  },
+  "model_version": "v1"
+}

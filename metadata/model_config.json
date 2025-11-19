@@ -1,0 +1,60 @@
+{
+  "Prophet": {
+    "params": {
+      "yearly_seasonality": true,
+      "weekly_seasonality": true,
+      "daily_seasonality": false,
+      "interval_width": 0.95
+    },
+    "regressors": [
+      "n_transactions",
+      "avg_price",
+      "qty_sum",
+      "avg_rating"
+    ]
+  },
+  "SARIMAX": {
+    "params": {
+      "order": [
+        1,
+        1,
+        1
+      ],
+      "seasonal_order": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "enforce_stationarity": false,
+      "enforce_invertibility": false
+    },
+    "exog": [
+      "n_transactions",
+      "avg_price",
+      "qty_sum",
+      "avg_rating"
+    ],
+    "exog_scaler": "exog_scaler.pkl"
+  },
+  "LightGBM": {
+    "params": {
+      "objective": "regression",
+      "metric": "mae",
+      "learning_rate": 0.05,
+      "num_leaves": 64,
+      "max_depth": -1,
+      "feature_fraction": 0.8,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 5,
+      "verbosity": -1
+    }
+  },
+  "Stacking": {
+    "meta_model": "Ridge",
+    "meta_params": {
+      "alpha": 0.1
+    }
+  },
+  "horizon": 30
+}

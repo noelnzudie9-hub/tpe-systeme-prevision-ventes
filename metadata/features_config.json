@@ -1,0 +1,90 @@
+{
+  "temporal_features": [
+    "day_of_week",
+    "day_of_month",
+    "week_of_year",
+    "month",
+    "quarter",
+    "is_weekend",
+    "is_month_start",
+    "is_month_end",
+    "day_sin",
+    "day_cos",
+    "month_sin",
+    "month_cos"
+  ],
+  "lag_days": [
+    1,
+    7,
+    14,
+    28
+  ],
+  "rolling_windows": [
+    7,
+    14,
+    30
+  ],
+  "growth_features": [
+    1,
+    7
+  ],
+  "seasonal_features": [
+    "seasonal_dow_mean",
+    "seasonal_month_mean"
+  ],
+  "exogenous_features": [
+    "n_transactions",
+    "avg_price",
+    "qty_sum",
+    "avg_rating"
+  ],
+  "feature_columns": [
+    "n_transactions",
+    "avg_price",
+    "qty_sum",
+    "avg_rating",
+    "prop_female",
+    "prop_member",
+    "prop_cash",
+    "prop_ewallet",
+    "prop_credit",
+    "day_of_week",
+    "day_of_month",
+    "week_of_year",
+    "month",
+    "quarter",
+    "is_weekend",
+    "is_month_start",
+    "is_month_end",
+    "day_sin",
+    "day_cos",
+    "month_sin",
+    "month_cos",
+    "lag_1",
+    "lag_1_qty",
+    "lag_7",
+    "lag_7_qty",
+    "lag_14",
+    "lag_14_qty",
+    "lag_28",
+    "lag_28_qty",
+    "rolling_mean_7",
+    "rolling_std_7",
+    "rolling_max_7",
+    "rolling_min_7",
+    "rolling_mean_14",
+    "rolling_std_14",
+    "rolling_max_14",
+    "rolling_min_14",
+    "rolling_mean_30",
+    "rolling_std_30",
+    "rolling_max_30",
+    "rolling_min_30",
+    "diff_1",
+    "pct_change_1",
+    "diff_7",
+    "pct_change_7",
+    "seasonal_dow_mean",
+    "seasonal_month_mean"
+  ]
+}
